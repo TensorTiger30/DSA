@@ -47,6 +47,16 @@ public class Main {
         // Traverse the linked list and print the Node values
         linkedListCustom1.traverse();
 
+        System.out.println("<============================>");
+
+        // Delete a node from start
+        linkedListCustom.remove();
+        // Traverse the linked list and print the Node values
+        linkedListCustom.traverse();
+        // Delete a node from start
+        linkedListCustom.remove();
+        // Traverse the linked list and print the Node values
+        linkedListCustom.traverse();
     }
 
 }

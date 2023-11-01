@@ -1,8 +1,8 @@
 /*
-*
-* Generic implementation of linked list
-*
-* */
+ *
+ * Generic implementation of linked list
+ *
+ * */
 public class LinkedListCustom<T> {
 
     private Node<T> head;
@@ -16,11 +16,11 @@ public class LinkedListCustom<T> {
     }
 
     /*
-    *
-    * Parameterized Constructor to create a LinkedList
-    * @param head - Set the head node of the linked list
-    *
-    * */
+     *
+     * Parameterized Constructor to create a LinkedList
+     * @param head - Set the head node of the linked list
+     *
+     * */
     public LinkedListCustom(Node<T> head) {
         this.head = head;
     }
@@ -28,7 +28,7 @@ public class LinkedListCustom<T> {
     /*
      *
      * Function to insert node at the beginning of the linked list
-     * @param data can be any integer value
+     * @param data can be any format T
      *
      * */
     public void insert(T data) {
@@ -66,6 +66,21 @@ public class LinkedListCustom<T> {
             temp = temp.getNext();
         }
         System.out.println();
+    }
+
+    /*
+     *
+     * Function to delete a first node from linked list
+     *
+     * */
+    public Node<T> remove() {
+        if (this.head == null) {
+            return null;
+        }
+
+        this.head = this.head.getNext();
+
+        return this.head;
     }
 
 
